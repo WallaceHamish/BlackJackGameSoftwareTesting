@@ -15,7 +15,7 @@ public class Dice {
         roll();
     }
 
-    //** Roll method sets the value of the dice to a random number (REQ-2)
+    //** Roll method sets the value of the dice to a random number (REQUIREMENT-2)
 
     public void roll() {
         Random randomValue = new Random();
