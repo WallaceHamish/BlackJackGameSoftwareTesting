@@ -53,16 +53,44 @@ public class Main {
     }
 
     //** This method will ask the user if they want roll the dice or hold it instead,
-    // allowing the computer to roll (REQUIREMENT-4)
+    // allowing the computer to roll (REQUIREMENT-4 & REQUIREMENT-6)
     public static boolean rollDice() {
-        Scanner keyboard = new Scanner(System.in);
-        System.out.print("Would you like to roll the dice? (Y/N) : ");
+        Scanner keyboard = new Scanner(System.in); //** Checks for keyboard input
+        System.out.print("Would you like to roll the dice? (Y/N): ");
         String userResponse = keyboard.nextLine(); //** Retrieves a line of input
         char letter = userResponse.charAt(0); //** Retrieves the first character letter for input
         if (letter == 'Y' || letter == 'y') {
             return true;
         } else {
             return false;
+        }
+    }
+
+    //** This method handles the displaying of the score results.
+    public static void displayResults(int computerScore, int userScore) {
+        System.out.println("\nGame Over\n");
+        System.out.println("User's Score: " + userScore);
+        System.out.println("Computer's Score: " + computerScore);
+        System.out.println(getWinnerMessage(computerScore, userScore)); //** Data to display user & computer score in winner message
+    }
+
+    //** This method will return a message on who is the game winner
+    public static String getWinnerMessage(int computerScore, int userScore) {
+        //** If else statement used to display scores
+        if (userScore > computerScore && isUnderGameScore(userScore)) {
+            return "Well done! You have won the game!";
+        } else if (isUnderGameScore(userScore)
+                && !isUnderGameScore(computerScore)) {
+            return "Well done! You have won the game!";
+        } else if (userScore == 21 && computerScore != 21) {
+            return "Well done! You have won the game!";
+        } else if (userScore == computerScore) {
+            return "The game has tied!";
+        } else if (!isUnderGameScore(userScore)
+                && !isUnderGameScore(computerScore)) {
+            return "The game ended without a declared winner!";
+        } else {
+            return "The computer has won the game";
         }
     }
 }
