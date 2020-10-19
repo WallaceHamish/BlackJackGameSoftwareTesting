@@ -31,16 +31,8 @@ public class Main {
 
     }
 
-
-    //public void hold(boolean rollDice) {
-    //    switch (rollDice()) {
-    //        case 1:
-    //    }
-    //}
-
     //** This method returns value that represents the sum of both the dice (REQUIREMENT-3)
     public static int getRollValue() {
-
         Dice dice = new Dice();
         //** Rolling of the first dice
         int roll1Value = dice.getValue();
@@ -69,9 +61,7 @@ public class Main {
         if (letter == 'Y' || letter == 'y') {
             return true;
         } else {
-            (letter == 'N' || letter == 'n') {
-                return false;
-            }
+            return false;
         }
     }
 
