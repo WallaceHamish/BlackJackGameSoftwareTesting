@@ -22,6 +22,17 @@ public class Dice {
         value = randomValue.nextInt(NumberOfSides) + 1;
     }
 
+    //** Hold constructor called to allow the computer to take it's turn
+    void holdDice() {
+        hold();
+    }
+
+    //** Hold method
+    public void hold() {
+        Random randomValue = new Random();
+        value = 0;
+    }
+
     //** This method will retrieve the roll value and return the number that represents the roll
 
     public int getValue() {

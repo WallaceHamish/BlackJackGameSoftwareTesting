@@ -20,6 +20,7 @@ public class Main {
                 break;
             }
             System.out.println("User Score: " + userScore);
+            System.out.println("Computer Score: " + computerScore);
         }
 
         if (userScore == 0 && computerScore == 0) {
@@ -29,6 +30,13 @@ public class Main {
         }
 
     }
+
+
+    //public void hold(boolean rollDice) {
+    //    switch (rollDice()) {
+    //        case 1:
+    //    }
+    //}
 
     //** This method returns value that represents the sum of both the dice (REQUIREMENT-3)
     public static int getRollValue() {
@@ -52,19 +60,21 @@ public class Main {
         }
     }
 
-    //** This method will ask the user if they want roll the dice or hold it instead,
-    // allowing the computer to roll (REQUIREMENT-4 & REQUIREMENT-6)
+    //** This method will ask the user if they want roll the dice (REQUIREMENT-4)
     public static boolean rollDice() {
         Scanner keyboard = new Scanner(System.in); //** Checks for keyboard input
-        System.out.print("Would you like to roll the dice? (Y/N): ");
+        System.out.print("Roll the dice? (Y/N): ");
         String userResponse = keyboard.nextLine(); //** Retrieves a line of input
         char letter = userResponse.charAt(0); //** Retrieves the first character letter for input
         if (letter == 'Y' || letter == 'y') {
             return true;
         } else {
-            return false;
+            (letter == 'N' || letter == 'n') {
+                return false;
+            }
         }
     }
+
 
     //** This method handles the displaying of the score results.
     public static void displayResults(int computerScore, int userScore) {
