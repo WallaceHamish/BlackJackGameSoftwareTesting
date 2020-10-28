@@ -23,8 +23,9 @@ public class Main {
             System.out.println("Computer Score: " + computerScore);
         }
 
+        //This if else statement is used when no or incorrect input is entered upon starting the game
         if (userScore == 0 && computerScore == 0) {
-            System.out.println("Play against the computer to see your score");
+            System.out.println("You must enter 'Y' or 'y'");
         } else {
             displayResults(computerScore, userScore);
         }

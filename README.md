@@ -1,4 +1,16 @@
-# BlackJackGameSoftwareTesting
-ITPR6.518Assignment2
+# BlackJack Game - Software Testing
+## Requirements:
 
-******* REQUIREMENTS GO HERE *******
+Requirement 1: The human player starts.
+
+Requirement 2: At start, the player gets 2 random numbers.
+
+Requirement 3: The random numbers are summed up.
+
+Requirement 4: The player can then choose to hold or roll again the dice.
+
+Requirement 5: If they choose to roll again, numbers are added to the previous sum.
+
+Requirement 6: If the player holds, it is the computer’s turn.
+
+Requirement 7: The closest to 21 without going over is the winner.
