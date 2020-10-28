@@ -11,6 +11,4 @@ Requirement 4: The player can roll the dice again.
 
 Requirement 5: If they choose to roll again, numbers are added to the previous sum.
 
-Requirement 6: If the player holds, it is the computer’s turn.
-
-Requirement 7: The closest to 21 without going over is the winner.
+Requirement 6: The closest to 21 without going over is the winner.
