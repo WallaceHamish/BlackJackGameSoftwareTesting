@@ -1,4 +1,4 @@
-# BlackJack Game - Software Testing
+# Blackjack Game - Software Testing
 ## Requirements:
 
 Requirement 1: The human player starts.
